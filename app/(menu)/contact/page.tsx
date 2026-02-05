@@ -1,5 +1,6 @@
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 export default function ContactPage() {
   return (
@@ -123,9 +124,24 @@ export default function ContactPage() {
             </div>
             <hr className='w-full border border-gray-800' />
             <div className='flex items-center gap-4'>
-              <div className='rounded-lg bg-gray-800 size-8 flex items-center justify-center'></div>
-              <div className='rounded-lg bg-gray-800 size-8 flex items-center justify-center'></div>
-              <div className='rounded-lg bg-gray-800 size-8 flex items-center justify-center'></div>
+              <SocialIcon
+                url='https://linkedin.com'
+                bgColor='#0f172a'
+                fgColor='#ffffff'
+                style={{ height: 36, width: 36 }}
+              />
+              <SocialIcon
+                url='https://instagram.com'
+                bgColor='#0f172a'
+                fgColor='#ffffff'
+                style={{ height: 36, width: 36 }}
+              />
+              <SocialIcon
+                url='https://facebook.com'
+                bgColor='#0f172a'
+                fgColor='#ffffff'
+                style={{ height: 36, width: 36 }}
+              />
             </div>
           </div>
         </div>

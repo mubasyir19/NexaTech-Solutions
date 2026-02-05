@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
@@ -9,7 +10,8 @@ export default function Footer() {
         <div className='flex items-stretch flex-col md:flex-row gap-10'>
           <div className='flex-1'>
             <div className='flex items-center gap-2'>
-              <div className='size-10 bg-secondary rounded-lg'></div>
+              <Image src={`/images/logo.png`} width={100} height={100} alt='logo' className='size-10' />
+              {/* <div className='size-10 bg-secondary rounded-lg'></div> */}
               <h1 className='font-bold text-secondary text-xl'>NexaTech Solutions</h1>
             </div>
             <p className='mt-4 text-gray-500 text-sm w-3/4'>

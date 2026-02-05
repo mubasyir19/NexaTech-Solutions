@@ -1,6 +1,8 @@
 'use client';
 
+import { firaCode } from '@/lib/fonts';
 import { listMenu, MenuItem } from '@/lib/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
@@ -32,10 +34,9 @@ export default function Navbar() {
   return (
     <nav className='w-full sticky top-0 z-50 py-4 px-6 bg-white border-b border-gray-200'>
       <div className='hidden container mx-auto lg:flex items-center justify-between'>
-        <div className=''>
-          <h1 className='text-secondary text-sm font-semibold'>
-            NexaTech <br /> Solutions
-          </h1>
+        <div className='flex items-center gap-2'>
+          <Image src={`/images/logo.png`} width={100} height={100} alt='logo' className='size-10' />
+          <h1 className={`text-secondary text-base font-semibold ${firaCode.className}`}>NexaTech</h1>
         </div>
         <ul className='flex items-center gap-4'>
           {listMenu.map((item: MenuItem, index: number) => (
@@ -60,8 +61,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className='my-auto lg:hidden flex items-center justify-between px-6 py-2'>
-        <div className=''>
-          <h1 className='text-lg text-black font-medium'>NexaTech Solutions</h1>
+        <div className='flex items-center gap-2'>
+          <Image src={`/images/logo.png`} width={100} height={100} alt='logo' className='size-8' />
+          <h1 className={`text-secondary text-base font-semibold ${firaCode.className}`}>NexaTech</h1>
         </div>
         <button onClick={handleOpenMenu} className='flex flex-col gap-2'>
           <span

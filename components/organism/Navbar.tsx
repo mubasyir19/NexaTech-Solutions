@@ -89,7 +89,7 @@ export default function Navbar() {
                     route === menu.link || (menu.link !== '/' && route.startsWith(menu.link))
                       ? 'border-primary text-primary border-l-4'
                       : 'text-secondary'
-                  } px-5 py-3 text-start text-base`}
+                  } px-5 py-3 text-start text-sm`}
                 >
                   <Link href={menu.link} onClick={handleOpenMenu}>
                     {menu.name}

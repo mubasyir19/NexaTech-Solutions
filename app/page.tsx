@@ -99,8 +99,16 @@ export default function Home() {
         </div>
       </section>
       <section className='container mx-auto px-6 py-24'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
-          <div className=''></div>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+          <div className='hidden md:block'>
+            <Image
+              src={`/images/collaboration.jpg`}
+              width={1080}
+              height={1080}
+              alt='header'
+              className='h-11/12 w-full object-cover shadow-lg rounded-lg'
+            />
+          </div>
           <div className=''>
             <span className='px-3 py-1.5 rounded-full text-purple-400 bg-purple-100 text-xs font-semibold text-center'>
               About us

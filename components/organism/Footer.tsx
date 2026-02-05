@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Footer() {
   return (
@@ -15,15 +16,24 @@ export default function Footer() {
               Empowering business with cutting-edge technology for the digital age. Join us in building the future.
             </p>
             <div className='mt-4 flex items-center gap-2'>
-              <div className='bg-secondary size-10 rounded-full flex items-center justify-center'>
-                <p className='text-sm text-white'>LN</p>
-              </div>
-              <div className='bg-secondary size-10 rounded-full flex items-center justify-center'>
-                <p className='text-sm text-white'>IG</p>
-              </div>
-              <div className='bg-secondary size-10 rounded-full flex items-center justify-center'>
-                <p className='text-sm text-white'>FB</p>
-              </div>
+              <SocialIcon
+                url='https://linkedin.com'
+                bgColor='#000000'
+                fgColor='#ffffff'
+                style={{ height: 32, width: 32 }}
+              />
+              <SocialIcon
+                url='https://instagram.com'
+                bgColor='#000000'
+                fgColor='#ffffff'
+                style={{ height: 32, width: 32 }}
+              />
+              <SocialIcon
+                url='https://facebook.com'
+                bgColor='#000000'
+                fgColor='#ffffff'
+                style={{ height: 32, width: 32 }}
+              />
             </div>
           </div>
           <div className='flex-1 grid grid-cols-1 md:grid-cols-3 gap-4'>

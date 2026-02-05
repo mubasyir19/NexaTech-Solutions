@@ -27,7 +27,7 @@ export default function TimeLine() {
 
               {/* Card */}
               <div
-                className={`ml-10 w-full md:ml-0 md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto'}`}
+                className={`ml-10 w-10/12 md:ml-0 md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto'}`}
               >
                 <div className='rounded-xl bg-slate-50 p-6 shadow-sm'>
                   <span

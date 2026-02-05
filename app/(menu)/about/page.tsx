@@ -70,7 +70,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className='py-24 p-6'>
+      <section className='py-24 px-6 container mx-auto'>
         <TimeLine />
       </section>
       <section className='bg-primary/5 px-6 py-24'>
